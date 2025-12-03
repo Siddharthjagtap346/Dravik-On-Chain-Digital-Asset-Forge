@@ -4,15 +4,6 @@
 
 Dravik allows creators to upload any digital file, verify originality, store it on IPFS, register it as on-chain IP, optionally link it with **PizzaDAO IP**, license it to buyers, and earn revenue — all inside a beautiful, fast, full-stack application.
 
-Built from scratch with:
-
-* **React + Tailwind (Frontend)**
-* **Node.js + Express (Backend)**
-* **Pinata IPFS**
-* **Story Protocol SDK**
-* **SQLite DB**
-* **Dynamic wallet authentication**
-* **BAV — Blockchain Asset Verification Layer**
 
 ---
 
@@ -88,7 +79,7 @@ Buyers can:
 
 ---
 
-# 🔥 **NEW — 3. BAV: Blockchain Asset Verification Layer**
+# 🔥 **3. BAV: Blockchain Asset Verification Layer on Story**
 
 *(Brand new section you requested)*
 
