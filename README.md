@@ -263,9 +263,75 @@ Everything syncs with Story Explorer.
 
 # 📘 <a name="backend-docs"></a> **8. Backend Documentation**
 
-Complete backend documentation is available at:
+Got it! I can help you update your README to clearly include the **folder structure** details for both `sp-frontend` and `backend` with all the key files you listed. Here's a polished version you can paste into your current README, adding it after your existing **Repository Structure** section:
 
-👉 **`/backend/README.md`**
+---
+
+# 📁 **8. Repository Structure (Detailed)**
+
+The Dravik repository is organized into two main sections: **frontend** (`sp-frontend`) and **backend** (`backend`). Below is a full breakdown of the folder structure and key files.
+
+---
+
+## **Backend — backend**
+
+Node.js + Express backend with TypeScript powering API routes, Story Protocol interactions, BAV, IPFS upload, licensing, and royalty tracking.
+
+```
+backend/
+├── src/
+│   ├── server.ts                 <-- Main Express server & all API routes (register, license, royalty, dispute)
+│   ├── story/                    <-- Story Protocol SDK scripts & workflows
+│   ├── pinata/                   <-- IPFS & Pinata upload utilities
+│   ├── db/                       <-- SQLite helpers & schema
+│   ├── auth/                     <-- JWT login & wallet authentication
+│   ├── types/                    <-- TypeScript declarations
+│   │   ├── better-sqlite3.d.ts
+│   │   ├── express.d.ts
+│   │   └── registerDynamic.ts
+│   ├── utils/                    <-- Backend utility functions
+│   │   ├── abi/
+│   │   │   ├── defaultNftContractAbi.ts
+│   │   │   ├── licenseAttachmentWorkflowsAbi.ts
+│   │   │   ├── licensingModuleAbi.ts
+│   │   │   └── totalLicenseTokenLimitHook.ts
+│   │   └── functions/
+│   │       ├── createSpgNftCollection.ts
+│   │       ├── mintNFT.ts
+│   │       ├── uploadToIpfs.ts
+│   │       ├── config.ts
+│   │       └── utils.ts
+├── database.db                   <-- SQLite database
+├── .env
+├── .env.example
+├── .gitignore
+├── .pre-commit-config.yaml
+├── .prettierrc
+└── scripts/                      <-- Advanced scripts for registration, licenses, royalty, derivative IP, disputes
+    ├── derivative/
+    │   ├── registerDerivativeCommercial.ts
+    │   ├── registerDerivativeCommercialCustom.ts
+    │   └── registerDerivativeNonCommercial.ts
+    ├── licenses/
+    │   ├── mintLicense.ts
+    │   ├── oneTimeUseLicense.ts
+    └── registration/
+        ├── register.ts
+        ├── registerCustom.ts
+        └── registerDynamic.ts
+```
+
+### **Backend Responsibilities**
+
+* REST APIs for asset registration & licensing
+* SHA-256 fingerprinting + BAV validation
+* IPFS uploads via Pinata
+* Story Protocol interactions (IP registration & license minting)
+* SQLite-based asset & license storage
+* JWT wallet-based authentication
+* Royalty tracking, one-time-use licenses, and derivative registrations
+
+---
 
 Includes:
 
@@ -282,10 +348,53 @@ Includes:
 
 # 💻 <a name="frontend-docs"></a> **9. Frontend Documentation**
 
-Detailed UI documentation is available at:
+## **Frontend — sp-frontend**
 
-👉 **`/sp-frontend/README.md`**
+React + TypeScript + Tailwind application handling the user interface, marketplace, dashboards, and wallet integration.
 
+```
+sp-frontend/
+├── dist/                         <-- Production build output
+├── node_modules/                 <-- Dependencies
+├── public/                       <-- Public assets (favicon, index.html, logos, etc.)
+├── src/
+│   ├── assets/                   <-- Images, logos, icons, media
+│   ├── components/               <-- React components
+│   │   ├── AddToMarketplace.tsx
+│   │   ├── AssetCard.tsx
+│   │   ├── Dashboard.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── IPFiDashboard.tsx
+│   │   ├── LandingPage.tsx
+│   │   ├── LicenseMarketplace.tsx
+│   │   ├── Login.tsx
+│   │   ├── MyAssetsPage.tsx
+│   │   ├── OwnedLicenseCard.tsx
+│   │   ├── RegisterAsset.tsx
+│   │   ├── RegisterAssetPage.tsx
+│   │   ├── Sidebar.tsx
+│   │   ├── Signup.tsx
+│   │   └── ...other components
+│   ├── App.tsx                   <-- Main React entry component
+│   ├── App.css
+│   ├── index.css
+│   ├── main.tsx                  <-- App mounting
+│   ├── TS global.d.ts            <-- TypeScript global declarations
+│   └── utils/                    <-- Frontend utility functions
+├── .gitignore
+└── README.md                     <-- Frontend documentation
+```
+
+### **Frontend Responsibilities**
+
+* Asset registration UI
+* Marketplace browsing & license purchase
+* Revenue & claims dashboard
+* Wallet authentication
+* Integration with backend APIs and Story Protocol SDK
+
+---
 Includes:
 
 * Page structure
