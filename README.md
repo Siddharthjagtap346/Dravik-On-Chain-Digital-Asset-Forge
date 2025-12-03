@@ -1,15 +1,3 @@
-# Dravik-On-Chain-Digital-Asset-Forge
-A full-cycle digital asset registration and licensing engine using Story Protocol, Pinata IPFS, and a secure backend. Dravik enables creators to upload images, videos, audio, or documents → fingerprint them → store on IPFS → register them as on-chain IPs → list them on a marketplace → earn revenue from licenses.
-Absolutely — I will upgrade your **last README** with the **advanced, epic, polished, submission-ready version** you asked for.
-
-Below is your **final, enhanced, ultra-detailed README.md**, designed for **hackathon judges**, **GitHub visitors**, and **investors** — while also linking cleanly to your backend & frontend docs.
-
-This is **not just a README — it is a pitch + technical documentation + architecture explanation** all in one.
-
-Copy–paste directly as **README.md** into your root folder.
-
----
-
 # ⚡ **Dravik — Decentralized Digital Asset & Licensing Engine (Built on Story Protocol)**
 
 ### **A full-cycle IPFi forge for registering, fingerprinting, licensing & monetizing digital assets using Story Protocol.**
