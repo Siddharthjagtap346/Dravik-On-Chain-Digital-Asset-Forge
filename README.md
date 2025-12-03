@@ -233,19 +233,22 @@ Everything syncs with Story Explorer.
 * Revenue accounting
 
 ---
-Got it! We can definitely add a **Screenshots / UI Preview** section to your README for GitHub. This will let anyone visiting the repo immediately see the UI and output of Dravik without running the app. Here’s a polished version you can add **after your current content**, keeping placeholders that you can replace with actual images later:
-
----
 
 # 📸 **8. App Screens (UI Preview)**
 
 *(Replace the placeholders with your actual screenshots in `/screenshots/`)*
 
+## Landing Page
+
+<img width="1755" height="3072" alt="image" src="https://github.com/user-attachments/assets/a5baaae0-184c-4471-ae46-d8b482a43ce7" />
+
+
 ## 🔐 Login Screen
 
 A clean wallet + password login flow with JWT authentication.
 
-![Login Screen](screenshots/login.png)
+<img width="1874" height="780" alt="image" src="https://github.com/user-attachments/assets/d7f65224-87ca-40a5-84c8-dce0a141dbd2" />
+
 
 ---
 
@@ -253,7 +256,8 @@ A clean wallet + password login flow with JWT authentication.
 
 Simple signup with wallet + password + optional email.
 
-![Signup Screen](screenshots/signup.png)
+<img width="1755" height="916" alt="image" src="https://github.com/user-attachments/assets/4fc86d6c-eb08-4054-8b78-693c377465e4" />
+
 
 ---
 
@@ -261,7 +265,8 @@ Simple signup with wallet + password + optional email.
 
 Shows user assets, marketplace shortcuts, revenue summary, and Story Protocol sync status.
 
-![Dashboard](screenshots/dashboard.png)
+<img width="1755" height="1142" alt="image" src="https://github.com/user-attachments/assets/36f222a6-5af7-4e83-b5bc-59521d17a87f" />
+
 
 ---
 
@@ -274,8 +279,10 @@ Includes optional **PizzaDAO IP integration**:
 > “Add to PizzaDAO Decentralized IP Registry (Optional)”
 > ✔ If selected → pizzaDAO-logo.png rendered next to asset
 
-![Registration Form](screenshots/registration_form.png)
-![PizzaDAO Attach](screenshots/pizzadao_attach.png)
+![Registration Form](<img width="1755" height="1830" alt="image" src="https://github.com/user-attachments/assets/7b270931-0b59-4f4d-a8c6-572e18f5acd6" />
+)
+![PizzaDAO Attach](<img width="1755" height="1963" alt="image" src="https://github.com/user-attachments/assets/33685fbe-0df8-4eff-b9eb-528af4cae510" />
+)
 
 ---
 
