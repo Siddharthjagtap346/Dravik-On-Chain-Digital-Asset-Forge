@@ -138,15 +138,22 @@ Dravik includes a lightweight BAV system:
 5. Buyer Access asset + metadata
 6. View license on chain + Story Explorer
 
+---
 
 # 🔥 **UNIQUE ADDITION — Optional PizzaDAO Integration 🍕**
 
 During asset registration, the creator can toggle:
 
 > **“Attach PizzaDAO IP metadata?”**
-> ✔ If enabled → Pizza DAO’s CC0-style metadata + PNG logo is injected into the asset metadata.
+> ✔ If enabled → Pizza DAO’s CC0-style metadata **plus the logo** is injected into the asset metadata:
 
-Use cases:
+<div align="center">
+  <img src="screenshots/pizzadao_logo.png" alt="PizzaDAO Logo" width="80" style="vertical-align:middle; margin-right:10px;" />
+  <span style="font-size:1.1em; vertical-align:middle;">PizzaDAO metadata attached</span>
+</div>
+
+### Use cases:
+
 🍕 Community-backed IP
 🍕 PizzaDAO derivative collections
 🍕 Fun branding on Story Explorer
