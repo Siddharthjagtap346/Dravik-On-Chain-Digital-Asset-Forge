@@ -233,6 +233,137 @@ Everything syncs with Story Explorer.
 * Revenue accounting
 
 ---
+Got it! We can definitely add a **Screenshots / UI Preview** section to your README for GitHub. This will let anyone visiting the repo immediately see the UI and output of Dravik without running the app. Here’s a polished version you can add **after your current content**, keeping placeholders that you can replace with actual images later:
+
+---
+
+# 📸 **13. App Screens (UI Preview)**
+
+*(Replace the placeholders with your actual screenshots in `/screenshots/`)*
+
+## 🔐 Login Screen
+
+A clean wallet + password login flow with JWT authentication.
+
+![Login Screen](screenshots/login.png)
+
+---
+
+## 📝 Signup Screen
+
+Simple signup with wallet + password + optional email.
+
+![Signup Screen](screenshots/signup.png)
+
+---
+
+## 🏠 Main Dashboard
+
+Shows user assets, marketplace shortcuts, revenue summary, and Story Protocol sync status.
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## 📤 Asset Registration Form
+
+Creators upload any file → backend hashes it → uploads to Pinata → registers IP on Story Protocol.
+
+Includes optional **PizzaDAO IP integration**:
+
+> “Add to PizzaDAO Decentralized IP Registry (Optional)”
+> ✔ If selected → pizzaDAO-logo.png rendered next to asset
+
+![Registration Form](screenshots/registration_form.png)
+![PizzaDAO Attach](screenshots/pizzadao_attach.png)
+
+---
+
+## 🛒 Marketplace Screen
+
+Beautiful asset cards showing:
+
+* Image preview
+* Price & license terms summary
+* Creator wallet address
+* “Buy License” button
+* IPFS & Story Explorer links
+
+![Marketplace](screenshots/marketplace.png)
+
+---
+
+## 🧾 License Card UI (Purchased Licenses)
+
+Shows:
+
+* License ID
+* Asset preview
+* Full terms JSON
+* Download asset button
+* Revenue share details
+* “View on Story Explorer” link
+* Dynamic Story-chain sync badge (Green = synced)
+
+![License Card UI](screenshots/license_card_ui.png)
+
+---
+
+## 💰 IPFi Dashboard (Earnings + Claiming)
+
+Includes:
+
+* Claimable revenue
+* Total earned
+* Withdraw button (Story Protocol)
+* Recent licensing activity
+
+![IPFi Dashboard](screenshots/ipfi_dashboard.png)
+
+---
+
+## 🌐 Story Dashboard (On-Chain View)
+
+Integrates with Story Explorer:
+
+* Shows registered IPs
+* Shows license tokens
+* “View on Story Explorer” button
+* Status: Registered / Syncing / Minting / WIP revenue calculating
+
+![Story Dashboard](screenshots/story_dashboard.png)
+
+---
+
+✅ **Tips for GitHub:**
+
+1. Create a `screenshots/` folder at the repo root.
+2. Add your PNG/JPG screenshots there.
+3. Use **relative paths** in the README like above: `screenshots/login.png`.
+4. When ready, push to GitHub — they will render the images automatically in your README.
+
+---
+
+
+---
+
+# 📸 **13. App Screens (UI Preview)**
+
+| Login                           | Signup                            | Dashboard                               |
+| ------------------------------- | --------------------------------- | --------------------------------------- |
+| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) | ![Dashboard](screenshots/dashboard.png) |
+
+| Registration Form                                       | PizzaDAO Attach                                     | Marketplace                                 |
+| ------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------- |
+| ![Registration Form](screenshots/registration_form.png) | ![PizzaDAO Attach](screenshots/pizzadao_attach.png) | ![Marketplace](screenshots/marketplace.png) |
+
+| License Card UI                                     | IPFi Dashboard                                    | Story Dashboard                                     |
+| --------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------- |
+| ![License Card UI](screenshots/license_card_ui.png) | ![IPFi Dashboard](screenshots/ipfi_dashboard.png) | ![Story Dashboard](screenshots/story_dashboard.png) |
+
+---
+
+
 
 
 # 📁 **8. Repository Structure**
