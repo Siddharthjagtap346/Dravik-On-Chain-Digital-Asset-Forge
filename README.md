@@ -2,7 +2,7 @@
 
 ### **A full-cycle IPFi forge for registering, fingerprinting, licensing & monetizing digital assets using Story Protocol.**
 
-Dravik allows creators to upload any digital file, verify its originality, store it on IPFS, register it as on-chain IP, license it to buyers, and earn revenue — all inside a beautiful, fast, full-stack application.
+Dravik allows creators to upload any digital file, verify originality, store it on IPFS, register it as on-chain IP, optionally link it with **PizzaDAO IP**, license it to buyers, and earn revenue — all inside a beautiful, fast, full-stack application.
 
 Built from scratch with:
 
@@ -12,23 +12,7 @@ Built from scratch with:
 * **Story Protocol SDK**
 * **SQLite DB**
 * **Dynamic wallet authentication**
-
----
-
-# 🧭 **Table of Contents**
-
-1. [Overview](#overview)
-2. [Key Components](#key-components)
-3. [End-to-End User Journey](#end-to-end-user-journey)
-4. [Why Dravik? — Value Proposition](#value-proposition)
-5. [System Architecture](#system-architecture)
-6. [Tech Stack](#tech-stack)
-7. [Repository Structure](#repository-structure)
-8. [Backend Documentation](#backend-docs)
-9. [Frontend Documentation](#frontend-docs)
-10. [Setup Instructions](#setup-instructions)
-11. [Future Roadmap](#future-roadmap)
-12. [License](#license)
+* **BAV — Blockchain Asset Verification Layer**
 
 ---
 
@@ -37,156 +21,189 @@ Built from scratch with:
 Dravik is a next-generation IPFi engine that empowers creators to:
 
 * Register digital assets on-chain
-* Prove ownership via fingerprinting
-* Store assets permanently on IPFS
-* Sell usage rights through smart licenses
-* Track revenue through Story Protocol
-* Claim income via a secure dashboard
+* Prove ownership via hashing + BAV
+* Store content on IPFS
+* License IP using Story Protocol
+* Claim revenue from a unified dashboard
+* Sync assets with Story Explorer
+* Optionally attach **PizzaDAO IP metadata**
 
 Perfect for:
 
 ✔ Solo creators
 ✔ Indie devs
 ✔ Musicians, artists, filmmakers
-✔ AI model + dataset publishers
+✔ AI model / dataset publishers
 ✔ Web3 IP entrepreneurs
 
 ---
 
 # 🧩 **2. Key Components**
 
-## 🔹 **A. Asset Registration Engine**
+## 🔹 A. Asset Registration Engine
 
-* SHA-256 fingerprint generation
-* Pinata IPFS upload
+* SHA-256 fingerprinting
+* BAV verification
+* Optional **PizzaDAO IP attach**
 * Story Protocol IP registration
-* Returns **IP ID + On-chain proofs**
+* IPFS pinning
+* Returns: **IP ID**, metadata, proofs
 
-## 🔹 **B. Licensing Marketplace**
+## 🔹 B. Licensing Marketplace
 
 Creators can:
 
-* List IPs
+* List assets
 * Set license price
-* Define license-terms JSON
+* Define custom license-terms JSON
 
 Buyers can:
 
-* View assets
+* Browse marketplace
 * Purchase licenses in SEP ETH
-* Get full license metadata
+* View license metadata
 
-## 🔹 **C. On-Chain Revenue System (WIP Model)**
+## 🔹 C. Revenue & Claims Center
 
-* Dravik uses Story Protocol revenue primitives
-* Tracks creator earnings
-* Buyers’ payments → backend → Story Protocol → WIP
-* Creators withdraw earnings from dashboard
+* Integrated WIP model (Story Protocol)
+* Track royalties
+* Claim withdrawable revenue
+* Clear UI for income history
 
-## 🔹 **D. Secure Backend Services**
+## 🔹 D. Secure Backend Layer
 
-* JWT authentication
-* File storage + hashing
-* Pinata IPFS gateway
-* Story Protocol script execution
-* SQLite database for all activity logs
+* JWT login + wallet pairing
+* SQLite database
+* IPFS + Pinata integration
+* Asset hashing + originality logging
 
-## 🔹 **E. Clean UI & Dashboard**
+## 🔹 E. Clean UI Dashboards
 
-* Modern Tailwind dashboard
-* Asset library
+* Asset Library
+* IPFi Dashboard
 * Marketplace
-* License viewer
-* Claims center
-* Wallet-based personalization
+* Claims & Revenue
+* License Viewer
+* Story Explorer sync panel
 
 ---
 
-# 🛣️ **3. End-to-End User Journey**
+# 🔥 **NEW — 3. BAV: Blockchain Asset Verification Layer**
 
-### **Creator Journey**
+*(Brand new section you requested)*
 
-1. Signup / login
-2. Upload asset → fingerprint generated
-3. Asset uploaded to IPFS
-4. Story Protocol registers it
-5. Creator lists asset in marketplace
-6. Buyers purchase licenses
-7. Revenue flows automatically
-8. Creator claims earnings
+Dravik includes a lightweight BAV system:
 
-### **Buyer Journey**
+### **BAV Responsibilities**
+
+✔ Stores SHA-256 hash
+✔ Verifies asset hasn't been tampered
+✔ Prevents duplicate uploads
+✔ Matches hash against database + Story chain data
+✔ Tracks proof history
+
+### **BAV Flow**
+
+1. User uploads a file
+2. System generates SHA-256 fingerprint
+3. BAV checks:
+
+   * Hash exists?
+   * Linked with Story IP ID?
+   * Any similar assets (future AI feature)?
+4. If unique → continue to register
+
+---
+
+# 🛣️ **4. End-to-End User Journey**
+
+## **Creator Flow**
+
+1. Signup / Login
+2. Go to **Registration Form**
+3. Upload file
+4. BAV verifies hash
+5. IPFS upload
+6. Register on Story Protocol
+7. (Optional) Attach **PizzaDAO IP metadata 🍕**
+8. List in marketplace
+9. Earn revenue + claim monthly
+
+## **Buyer Flow**
 
 1. Login
-2. Browse marketplace
+2. Browse **Marketplace**
 3. Buy license (SEP ETH)
 4. Backend registers license on-chain
-5. Buyer receives license + asset
-6. License visible on Story Explorer
+5. Buyer Access asset + metadata
+6. View license on chain + Story Explorer
+
+
+# 🔥 **UNIQUE ADDITION — Optional PizzaDAO Integration 🍕**
+
+During asset registration, the creator can toggle:
+
+> **“Attach PizzaDAO IP metadata?”**
+> ✔ If enabled → Pizza DAO’s CC0-style metadata + PNG logo is injected into the asset metadata.
+
+Use cases:
+🍕 Community-backed IP
+🍕 PizzaDAO derivative collections
+🍕 Fun branding on Story Explorer
+
+This makes every registered asset optionally part of a playful Creative Commons movement.
 
 ---
 
-# 🚀 **4. Why Dravik? — Value Proposition**
+# 🚀 **5. Why Dravik? — Value Proposition**
 
-### 🧾 **Transparent Proof of Ownership**
+### 🧾 Verified Ownership
 
-SHA-256 + Story Protocol ensures verifiable provenance.
+Hashing + BAV + Story Protocol = tamper-proof provenance.
 
-### 🌐 **Decentralized Asset Storage**
+### 🌐 Decentralized Storage
 
-All content is pinned to IPFS via Pinata.
+All assets stored permanently via IPFS.
 
-### 💸 **Monetization Made Simple**
+### 🧩 Rich IP Metadata
 
-Sell licenses for any digital asset.
+Custom terms + PizzaDAO IP + Fingerprints.
 
-### 🛡️ **Anti-Plagiarism Protection (Upcoming)**
+### 🔗 Built Natively on Story Protocol
 
-AI-powered originality detection pipeline coming soon.
+Everything syncs with Story Explorer.
 
-### 🔗 **Built Natively on Story Protocol**
 
-All IP data is interoperable with the Story ecosystem.
-
----
-
-# 🏗️ **5. System Architecture**
+# 🏗️ **6. System Architecture**
 
 ```
                        +----------------------+
                        |  React Frontend UI   |
-                       |  (sp-frontend/)      |
                        +----------+-----------+
                                   |
                                   v
                       +-----------------------+
-                      |   Node.js Backend     |
-                      |  (Express + TS)       |
-                      | - Uploads             |
-                      | - IPFS                |
-                      | - Hashing             |
-                      | - Story SDK           |
-                      | - Licensing           |
+                      |  Node.js Backend      |
+                      |  - BAV Layer          |
+                      |  - IPFS Upload        |
+                      |  - Story SDK          |
+                      |  - License Engine     |
                       +----------+------------+
                                  |
                                  v
              +-------------------------------------------+
-             |            Story Protocol (On-Chain)       |
-             |    - IP Registration                       |
-             |    - License Tokens                        |
-             |    - WIP Revenue                           |
+             |          Story Protocol Network           |
+             |    - IP Registration                      |
+             |    - License Tokens                       |
+             |    - WIP Revenue                          |
              +-------------------------------------------+
-
-                 +----------------------------------+
-                 |           Pinata IPFS            |
-                 | - Asset storage                  |
-                 | - Metadata                       |
-                 +----------------------------------+
+                 +---------------------------+
+                 |        Pinata IPFS       |
+                 +---------------------------+
 ```
-
 ---
 
-# ⚙️ **6. Tech Stack**
+# ⚙️ **7. Tech Stack**
 
 ### **Frontend**
 
@@ -217,7 +234,7 @@ All IP data is interoperable with the Story ecosystem.
 
 ---
 
-# 📁 **7. Repository Structure**
+# 📁 **8. Repository Structure**
 
 ```
 /
@@ -312,41 +329,9 @@ npm run dev
 
 ---
 
-# 🔮 **11. Future Roadmap**
-
-| Feature                                   | Status |
-| ----------------------------------------- | ------ |
-| AI originality scoring (embeddings + LLM) | 🔜     |
-| Derivative IP marketplace                 | 🔜     |
-| Multi-wallet revenue splitting            | 🔜     |
-| Admin dashboard                           | 🔜     |
-| On-chain dispute resolution               | 🔜     |
-| Multi-chain asset bridging                | 🔜     |
-
----
 
 # 📜 **12. License**
 
 MIT License — free for all usage.
 
----
-
-# 🎉 **Done!**
-
-If you want next:
-
-### 🔥 Generate `/backend/README.md` (full 7-section technical doc)
-
-### 🔥 Generate `/sp-frontend/README.md` (UI, components, APIs, hooks)
-
-### 🔥 Auto-generate screenshots placeholders
-
-### 🔥 Write GitHub Actions deployment workflow
-
-### 🔥 Generate API_DOCS.md
-
-Just say:
-
-👉 **“Generate backend README”**
-or
 👉 **“Generate frontend README”**
