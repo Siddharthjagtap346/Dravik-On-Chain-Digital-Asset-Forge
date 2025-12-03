@@ -93,6 +93,7 @@ Buyers can:
 *(Brand new section you requested)*
 
 Dravik includes a lightweight BAV system:
+<div align="center"> <img src="https://github.com/user-attachments/assets/8b353d8b-af5d-45a6-a51e-6d4ab4873fe2" alt="Story Explorer Logo" width="80" style="vertical-align:middle; margin-right:10px;" /> <span style="font-size:1.1em; vertical-align:middle;">Verified with Story Explorer</span> </div>
 
 ### **BAV Responsibilities**
 
@@ -148,7 +149,7 @@ During asset registration, the creator can toggle:
 > ✔ If enabled → Pizza DAO’s CC0-style metadata **plus the logo** is injected into the asset metadata:
 <div align="center">
   <img src="https://github.com/user-attachments/assets/b11d4fbf-cf29-4bd1-9d5c-f6d36a9a3fbc" alt="PizzaDAO Logo" width="80" style="vertical-align:middle; margin-right:10px;" />
-  <span style="font-size:1.1em; vertical-align:middle;">PizzaDAO metadata attached</span>
+  <span style="font-size:1.1em; vertical-align:middle;">  PizzaDAO metadata & IP attached  </span>
 </div>
 
 ### Use cases:
