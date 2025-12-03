@@ -234,42 +234,53 @@ Everything syncs with Story Explorer.
 
 ---
 
+
 # 📁 **8. Repository Structure**
+
+The Dravik repository is organized into two main sections: **frontend** (`sp-frontend`) and **backend** (`backend`). Below is a full breakdown of the folder structure and key files.
 
 ```
 /
 │── README.md                      <-- Main project documentation
 │
-├── backend/                       <-- Backend + Story SDK scripts
+├── backend/                       <-- Backend + Story Protocol SDK scripts
 │   ├── src/
-│   │   ├── server.ts              <-- Express server & all API routes
-│   │   ├── story/                 <-- Story protocol workflows
-│   │   ├── pinata/                <-- IPFS utilities
-│   │   ├── db/                    <-- SQLite helpers
-│   │   └── auth/                  <-- JWT login / signup
-│   ├── public/
+│   │   ├── server.ts              <-- Main Express server & all API routes
+│   │   │                             (handles registration, licensing, royalty, dispute,
+│   │   │                             Story Protocol, BAV verification, Pinata uploads, DB, auth)
+│   │   ├── story/                 <-- Helper scripts for Story Protocol workflows
+│   │   ├── pinata/                <-- IPFS upload utilities (Pinata integration)
+│   │   ├── db/                    <-- SQLite helpers, schema, queries
+│   │   └── auth/                  <-- JWT login & wallet pairing utilities
+│   ├── public/                     <-- Public backend assets (optional)
+│   ├── scripts/                    <-- Advanced workflows & registration/license scripts
+│   │   ├── derivative/
+│   │   ├── licenses/
+│   │   └── registration/
 │   └── README.md                  <-- Full backend documentation
 │
 └── sp-frontend/                   <-- React + TypeScript + Tailwind
     ├── src/
-    │   ├── pages/
-    │   ├── components/
-    │   ├── hooks/
-    │   └── utils/
+    │   ├── pages/                 <-- Main pages (Landing, Dashboard, RegisterAsset, etc.)
+    │   ├── components/            <-- UI components (AssetCard, Sidebar, Footer, etc.)
+    │   ├── hooks/                 <-- Custom React hooks
+    │   └── utils/                 <-- Frontend utility functions
     └── README.md                  <-- Full frontend documentation
 ```
 
+### **Key Points**
+
+* **server.ts** is the main entry point for all backend functionality. Most "logic" lives here.
+* Folders like `story/`, `pinata/`, `db/`, `auth/` are helpers or modules used by `server.ts`.
+* `/scripts` contains all advanced scripts for registration, license minting, royalties, and derivative IP management.
+* Frontend handles all UI, dashboards, marketplace, asset browsing, wallet auth, and API calls to backend.
+
+
 ---
 
-# 📘 <a name="backend-docs"></a> **8. Backend Documentation**
+# 📘 **9. Backend Documentation**
 
 Got it! I can help you update your README to clearly include the **folder structure** details for both `sp-frontend` and `backend` with all the key files you listed. Here's a polished version you can paste into your current README, adding it after your existing **Repository Structure** section:
-
----
-
-# 📁 **8. Repository Structure (Detailed)**
-
-The Dravik repository is organized into two main sections: **frontend** (`sp-frontend`) and **backend** (`backend`). Below is a full breakdown of the folder structure and key files.
 
 ---
 
@@ -346,7 +357,7 @@ Includes:
 
 ---
 
-# 💻 <a name="frontend-docs"></a> **9. Frontend Documentation**
+# 💻 **10. Frontend Documentation**
 
 ## **Frontend — sp-frontend**
 
@@ -411,7 +422,7 @@ Includes:
 ### Clone repo
 
 ```bash
-git clone https://github.com/yourname/dravik.git
+git clone https://github.com/Siddharthjagtap346/dravik.git
 cd dravik
 ```
 
@@ -423,7 +434,7 @@ cd dravik
 cd backend
 npm install
 cp .env.example .env
-npm run dev
+npm run server
 ```
 
 ---
@@ -443,4 +454,3 @@ npm run dev
 
 MIT License — free for all usage.
 
-👉 **“Generate frontend README”**
