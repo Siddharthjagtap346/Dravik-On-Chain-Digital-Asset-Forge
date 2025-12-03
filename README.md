@@ -237,7 +237,7 @@ Got it! We can definitely add a **Screenshots / UI Preview** section to your REA
 
 ---
 
-# 📸 **13. App Screens (UI Preview)**
+# 📸 **8. App Screens (UI Preview)**
 
 *(Replace the placeholders with your actual screenshots in `/screenshots/`)*
 
@@ -335,38 +335,8 @@ Integrates with Story Explorer:
 
 ---
 
-✅ **Tips for GitHub:**
 
-1. Create a `screenshots/` folder at the repo root.
-2. Add your PNG/JPG screenshots there.
-3. Use **relative paths** in the README like above: `screenshots/login.png`.
-4. When ready, push to GitHub — they will render the images automatically in your README.
-
----
-
-
----
-
-# 📸 **13. App Screens (UI Preview)**
-
-| Login                           | Signup                            | Dashboard                               |
-| ------------------------------- | --------------------------------- | --------------------------------------- |
-| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) | ![Dashboard](screenshots/dashboard.png) |
-
-| Registration Form                                       | PizzaDAO Attach                                     | Marketplace                                 |
-| ------------------------------------------------------- | --------------------------------------------------- | ------------------------------------------- |
-| ![Registration Form](screenshots/registration_form.png) | ![PizzaDAO Attach](screenshots/pizzadao_attach.png) | ![Marketplace](screenshots/marketplace.png) |
-
-| License Card UI                                     | IPFi Dashboard                                    | Story Dashboard                                     |
-| --------------------------------------------------- | ------------------------------------------------- | --------------------------------------------------- |
-| ![License Card UI](screenshots/license_card_ui.png) | ![IPFi Dashboard](screenshots/ipfi_dashboard.png) | ![Story Dashboard](screenshots/story_dashboard.png) |
-
----
-
-
-
-
-# 📁 **8. Repository Structure**
+# 📁 **9. Repository Structure**
 
 The Dravik repository is organized into two main sections: **frontend** (`sp-frontend`) and **backend** (`backend`). Below is a full breakdown of the folder structure and key files.
 
@@ -409,7 +379,7 @@ The Dravik repository is organized into two main sections: **frontend** (`sp-fro
 
 ---
 
-# 📘 **9. Backend Documentation**
+# 📘 **10. Backend Documentation**
 
 Got it! I can help you update your README to clearly include the **folder structure** details for both `sp-frontend` and `backend` with all the key files you listed. Here's a polished version you can paste into your current README, adding it after your existing **Repository Structure** section:
 
@@ -488,7 +458,7 @@ Includes:
 
 ---
 
-# 💻 **10. Frontend Documentation**
+# 💻 **11. Frontend Documentation**
 
 ## **Frontend — sp-frontend**
 
@@ -548,7 +518,7 @@ Includes:
 
 ---
 
-# 🔧 **10. Setup Instructions**
+# 🔧 **12. Setup Instructions**
 
 ### Clone repo
 
@@ -581,7 +551,7 @@ npm run dev
 ---
 
 
-# 📜 **12. License**
+# 📜 **13. License**
 
 MIT License — free for all usage.
 
