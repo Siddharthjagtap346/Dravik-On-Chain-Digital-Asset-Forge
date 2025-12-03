@@ -3,7 +3,7 @@
        alt="Dravik Logo" 
        width="60" 
        style="vertical-align:baseline; margin-right:14px;" />
-  Dravik — Decentralized Digital Asset & Licensing Engine (Built on Story Protocol)
+  Dravik — Decentralized Digital Asset & Licensing Engine
 </h1>
 
 
