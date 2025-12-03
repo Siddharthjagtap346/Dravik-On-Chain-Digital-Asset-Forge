@@ -93,7 +93,7 @@ Buyers can:
 *(Brand new section you requested)*
 
 Dravik includes a lightweight BAV system:
-<div align="center"> <img src="https://github.com/user-attachments/assets/8b353d8b-af5d-45a6-a51e-6d4ab4873fe2" alt="Story Explorer Logo" width="180" style="vertical-align:middle; margin-right:15px;" /></div>
+<div align="center"> <img src="https://github.com/user-attachments/assets/8b353d8b-af5d-45a6-a51e-6d4ab4873fe2" alt="Story Explorer Logo" width="250" style="vertical-align:middle; margin-right:20px;" /></div>
 
 ### **BAV Responsibilities**
 
