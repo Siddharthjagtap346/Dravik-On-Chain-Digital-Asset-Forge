@@ -151,8 +151,6 @@ During asset registration, the creator can toggle:
   <span style="font-size:1.1em; vertical-align:middle;">PizzaDAO metadata attached</span>
 </div>
 
-![pizzadao](https://github.com/user-attachments/assets/b11d4fbf-cf29-4bd1-9d5c-f6d36a9a3fbc)
-
 ### Use cases:
 
 🍕 Community-backed IP
