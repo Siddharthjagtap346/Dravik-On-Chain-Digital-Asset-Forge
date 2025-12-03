@@ -146,11 +146,12 @@ During asset registration, the creator can toggle:
 
 > **“Attach PizzaDAO IP metadata?”**
 > ✔ If enabled → Pizza DAO’s CC0-style metadata **plus the logo** is injected into the asset metadata:
-
 <div align="center">
-  <img src="screenshots/pizzadao_logo.png" alt="PizzaDAO Logo" width="80" style="vertical-align:middle; margin-right:10px;" />
+  <img src="https://github.com/user-attachments/assets/b11d4fbf-cf29-4bd1-9d5c-f6d36a9a3fbc" alt="PizzaDAO Logo" width="80" style="vertical-align:middle; margin-right:10px;" />
   <span style="font-size:1.1em; vertical-align:middle;">PizzaDAO metadata attached</span>
 </div>
+
+![pizzadao](https://github.com/user-attachments/assets/b11d4fbf-cf29-4bd1-9d5c-f6d36a9a3fbc)
 
 ### Use cases:
 
