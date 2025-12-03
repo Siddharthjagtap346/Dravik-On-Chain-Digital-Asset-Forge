@@ -2,8 +2,8 @@
   <img src="https://github.com/user-attachments/assets/6be20476-f53f-4908-83de-4db48d3e7eea" 
        alt="Dravik Logo" 
        width="60" 
-       style="vertical-align:baseline; margin-right:14px;" />
-  Dravik — Decentralized Digital Asset & Licensing Engine
+       style="vertical-align:middle; margin-right:15px;" />
+  Dravik — Decentralized Digital Asset & Licensing Engine (Built on Story Protocol)
 </h1>
 
 
