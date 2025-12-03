@@ -279,8 +279,7 @@ Includes optional **PizzaDAO IP integration**:
 > “Add to PizzaDAO Decentralized IP Registry (Optional)”
 > ✔ If selected → pizzaDAO-logo.png rendered next to asset
 
-![Registration Form](<img width="1755" height="1830" alt="image" src="https://github.com/user-attachments/assets/7b270931-0b59-4f4d-a8c6-572e18f5acd6" />
-)
+<img width="1755" height="1830" alt="image" src="https://github.com/user-attachments/assets/7b270931-0b59-4f4d-a8c6-572e18f5acd6" />
 ![PizzaDAO Attach](<img width="1755" height="1963" alt="image" src="https://github.com/user-attachments/assets/33685fbe-0df8-4eff-b9eb-528af4cae510" />
 )
 
