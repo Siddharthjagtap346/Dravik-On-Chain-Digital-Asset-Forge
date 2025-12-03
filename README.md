@@ -274,14 +274,14 @@ Shows user assets, marketplace shortcuts, revenue summary, and Story Protocol sy
 
 Creators upload any file → backend hashes it → uploads to Pinata → registers IP on Story Protocol.
 
+<img width="1755" height="1830" alt="image" src="https://github.com/user-attachments/assets/7b270931-0b59-4f4d-a8c6-572e18f5acd6" />
+
 Includes optional **PizzaDAO IP integration**:
 
 > “Add to PizzaDAO Decentralized IP Registry (Optional)”
 > ✔ If selected → pizzaDAO-logo.png rendered next to asset
 
-<img width="1755" height="1830" alt="image" src="https://github.com/user-attachments/assets/7b270931-0b59-4f4d-a8c6-572e18f5acd6" />
-![PizzaDAO Attach](<img width="1755" height="1963" alt="image" src="https://github.com/user-attachments/assets/33685fbe-0df8-4eff-b9eb-528af4cae510" />
-)
+<img width="1755" height="1963" alt="image" src="https://github.com/user-attachments/assets/33685fbe-0df8-4eff-b9eb-528af4cae510" />
 
 ---
 
@@ -290,12 +290,13 @@ Includes optional **PizzaDAO IP integration**:
 Beautiful asset cards showing:
 
 * Image preview
-* Price & license terms summary
+* IP id
 * Creator wallet address
+* Price & license terms summary
 * “Buy License” button
-* IPFS & Story Explorer links
 
-![Marketplace](screenshots/marketplace.png)
+<img width="1870" height="1023" alt="image" src="https://github.com/user-attachments/assets/57dceb55-7154-4c66-8b25-a5f605f347dc" />
+
 
 ---
 
@@ -311,7 +312,8 @@ Shows:
 * “View on Story Explorer” link
 * Dynamic Story-chain sync badge (Green = synced)
 
-![License Card UI](screenshots/license_card_ui.png)
+<img width="1755" height="1278" alt="image" src="https://github.com/user-attachments/assets/584f5e73-0a31-44a4-b5ee-e07ed9f22df7" />
+
 
 ---
 
@@ -324,7 +326,9 @@ Includes:
 * Withdraw button (Story Protocol)
 * Recent licensing activity
 
-![IPFi Dashboard](screenshots/ipfi_dashboard.png)
+<img width="1755" height="1173" alt="image" src="https://github.com/user-attachments/assets/0186d7ad-ef59-48b4-8ba4-f0757e836b46" />
+
+
 
 ---
 
@@ -337,7 +341,8 @@ Integrates with Story Explorer:
 * “View on Story Explorer” button
 * Status: Registered / Syncing / Minting / WIP revenue calculating
 
-![Story Dashboard](screenshots/story_dashboard.png)
+<img width="1755" height="1263" alt="image" src="https://github.com/user-attachments/assets/dcf840e2-d26c-4b6d-ac5f-2c0aa224fd3f" />
+
 
 ---
 
