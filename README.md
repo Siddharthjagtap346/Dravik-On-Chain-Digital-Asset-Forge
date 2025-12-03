@@ -2,10 +2,10 @@
   <img src="https://github.com/user-attachments/assets/6be20476-f53f-4908-83de-4db48d3e7eea" 
        alt="Dravik Logo" 
        width="60" 
-       style="vertical-align:middle; margin-right:10px;" />
+       style="vertical-align:middle; margin-right:14px;" />
   Dravik — Decentralized Digital Asset & Licensing Engine (Built on Story Protocol)
 </h1>
-<img width="326" height="332" alt="mylogo" src="https://github.com/user-attachments/assets/6be20476-f53f-4908-83de-4db48d3e7eea" />
+
 
 
 ### **A full-cycle IPFi forge for registering, fingerprinting, licensing & monetizing digital assets using Story Protocol.**
