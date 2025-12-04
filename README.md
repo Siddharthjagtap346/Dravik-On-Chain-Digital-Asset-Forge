@@ -30,6 +30,7 @@ Dravik is a next-generation IPFi engine that empowers creators to:
 Perfect for:
 
 ✔ Solo creators
+
 ✔ Indie devs
 ✔ Musicians, artists, filmmakers
 ✔ AI model / dataset publishers
