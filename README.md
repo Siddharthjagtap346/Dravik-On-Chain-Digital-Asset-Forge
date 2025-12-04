@@ -32,8 +32,11 @@ Perfect for:
 ✔ Solo creators
 
 ✔ Indie devs
+
 ✔ Musicians, artists, filmmakers
+
 ✔ AI model / dataset publishers
+
 ✔ Web3 IP entrepreneurs
 
 ---
